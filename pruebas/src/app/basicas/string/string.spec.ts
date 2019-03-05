@@ -1,5 +1,6 @@
 import { mensaje } from './string';
 
+// Al poner xdescribe se omite el bloque de pruebas
 // Sirve para agrupar pruebas
 describe('Pruebas de strings', () => {
     // Es una prueba
