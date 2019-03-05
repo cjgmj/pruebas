@@ -1,3 +1,3 @@
-export function mensaje(nombre: string): string {
+export function mensaje(nombre: string){
   return `Saludos ${nombre}`;
 }
