@@ -7,7 +7,7 @@ describe('Pruebas de números', () => {
         expect( resp ).toBe(100);
     });
 
-    it('Debe devolver el número ingresado más uno, si no es mayor a 100', () => {
+    it('Debe devolver el número ingresado más uno si no es mayor a 100', () => {
         const resp = incrementar(50);
 
         expect( resp ).toBe(51);
