@@ -7,7 +7,7 @@ describe('Pruebas de arrays', () => {
         expect( resp.length ).toBeGreaterThanOrEqual(3);
     });
 
-    it('Debe devolver MegaMan y Ultron', () => {
+    xit('Debe devolver MegaMan y Ultron', () => {
         const resp = obtenerRobots();
 
         expect( resp ).toContain('MegaMan');
