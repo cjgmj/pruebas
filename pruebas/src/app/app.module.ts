@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MedicosComponent } from './intermedio/espias/medicos.component';
 import { MedicoComponent } from './intermedio2/medico/medico.component';
+import { MedicoService } from './intermedio2/medico/medico.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { MedicoComponent } from './intermedio2/medico/medico.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MedicoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
