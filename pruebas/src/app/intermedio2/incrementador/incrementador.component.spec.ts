@@ -30,4 +30,16 @@ describe('IncremendatorComponent', () => {
         expect(elem.innerHTML).toContain(mensaje);
     });
 
+    it('Debe mostar en el input el valor del progreso', () => {
+        componente.cambiarValor(5);
+
+        fixture.detectChanges();
+        fixture.whenStable().then(() => {
+            const elem = fixture.debugElement.query( By.css('input') ).nativeElement;
+
+            expect( elem.value ).toBe('55');
+        });
+
+    });
+
 });
