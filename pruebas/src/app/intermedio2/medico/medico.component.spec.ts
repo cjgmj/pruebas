@@ -3,7 +3,7 @@ import { MedicoComponent } from './medico.component';
 import { MedicoService } from './medico.service';
 import { HttpClientModule } from '@angular/common/http';
 
-describe('Medico Component', () => {
+describe('MedicoComponent', () => {
     let componente: MedicoComponent;
     let fixture: ComponentFixture<MedicoComponent>;
 
