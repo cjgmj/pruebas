@@ -52,4 +52,15 @@ describe('IncremendatorComponent', () => {
         expect( componente.progreso ).toBe(50);
     });
 
+    it('Debe decrementar en 5 en la leyenda', () => {
+        const botones = fixture.debugElement.queryAll( By.css('.btn-primary') );
+        botones[0].triggerEventHandler('click', null);
+
+        fixture.detectChanges();
+
+        const elem: HTMLElement = fixture.debugElement.query( By.css('h3') ).nativeElement;
+
+        expect(elem.innerHTML).toContain('45');
+    });
+
 });
