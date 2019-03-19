@@ -30,13 +30,6 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('pruebas');
   });
 
-  xit('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to pruebas!');
-  });
-
   it('Debe tener un router-outlet', () => {
     const fixture = TestBed.createComponent(AppComponent);
 
